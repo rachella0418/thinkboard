@@ -7,11 +7,14 @@ import toast from "react-hot-toast";
 const App = () => {
   return (
     <div data-theme="retro">
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/create" element={<CreatePage />} />
-        <Route path="/note/:id" element={<NoteDetailPage />}/>
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/create" element={<CreatePage />} />
+          <Route path="/note/:id" element={<NoteDetailPage />}/>
+        </Routes>
+      </div>
+      
     </div>
   )
 }
